@@ -21,7 +21,7 @@ public class Order : MonoBehaviour {
         print("I would like a " + foodItems[0]);
         for(int i = 1; i < numOfItems; i++)
         {
-            print("");
+            print("/n and some " + foodItems[i]);
         }
     }
 
