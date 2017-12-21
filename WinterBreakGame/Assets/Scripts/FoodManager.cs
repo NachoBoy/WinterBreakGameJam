@@ -7,27 +7,30 @@ public class FoodManager : MonoBehaviour {
     [HideInInspector]
     public enum Food
     {
-        Water,
-        Soda,
-        Milk,
-        Juice,
         Hamburger,
         Cheeseburger,
-        ChickenSandwhich,
-        VeganSandwhich,
+        ChickenSandwich,
+        VeggieBurger,
+        DeluxeBurger,
+        TripleBurger,
+        ChickenNuggets,
+        Salad,
         Fries,
-        Chili,
-        Apples,
-        Rice
+        OnionRings,
+        MozerellaSticks,
+        MacAndCheese,
+        Water,
+        Soda,
+        Milkshake,
+        AppleJuice,
+        Coffee,
+        FancyWater,
+        ApplePie,
+        IceCream,
+        Cookies,
+        Donut,
+        Churros,
+        Cupcake
     }
 
-
-    // Use this for initialization
-    void Start () {
-    }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }
