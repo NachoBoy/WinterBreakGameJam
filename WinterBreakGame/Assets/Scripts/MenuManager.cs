@@ -13,6 +13,7 @@ public class MenuManager : MonoBehaviour {
     private ScoreManager SM;
     private Order orderManager;
     private Text queuedItems;
+    public GameObject[] itemCanvases;
 
     private bool deliveringOrder;
 	// Use this for initialization
@@ -25,11 +26,23 @@ public class MenuManager : MonoBehaviour {
 
     public void MenuOption()
     {
-        playerFood.Add(es.currentSelectedGameObject.GetComponent<FoodAssigned>().foodAssigned);
-        queuedItems.text += "\n" + es.currentSelectedGameObject.GetComponent<FoodAssigned>().foodAssigned;
-        print(es.currentSelectedGameObject.GetComponent<FoodAssigned>().foodAssigned + " added");
+        if (playerFood.Count < 4)
+        {
+            playerFood.Add(es.currentSelectedGameObject.GetComponent<FoodAssigned>().foodAssigned);
+            queuedItems.text += "\n" + es.currentSelectedGameObject.GetComponent<FoodAssigned>().foodAssigned;
+            print(es.currentSelectedGameObject.GetComponent<FoodAssigned>().foodAssigned + " added");
+        }
     }
     
+    public void CanvasSwap(GameObject activeCanvas)
+    {
+        for(int i = 0; i < itemCanvases.Length; i++)
+        {
+            itemCanvases[i].SetActive(false);
+        }
+        activeCanvas.SetActive(true);
+    }
+
     public void RemoveItem()
     {
         if (playerFood.Count > 0)
@@ -37,8 +50,12 @@ public class MenuManager : MonoBehaviour {
             string removedItem = playerFood[playerFood.Count - 1].ToString();
             print(playerFood[playerFood.Count - 1] + " removed");
             print(removedItem + " Is a thing");
-            queuedItems.text.Replace(removedItem,"");
+            queuedItems.text = "Queued Items:";
             playerFood.RemoveAt(playerFood.Count-1);
+            for(int i = 0; i < playerFood.Count; i++)
+            {
+                queuedItems.text += "\n" + playerFood[i].ToString();
+            }
             
         }
     }
