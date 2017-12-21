@@ -19,11 +19,13 @@ public class Order : MonoBehaviour {
     [HideInInspector]
     public Animator anim;
     private SpriteRenderer spriteRend;
+    private Animator spriteAnim;
 
     private void Start()
     {
         dialog = GameObject.Find("DialogBox").GetComponent<Text>();
         spriteRend = transform.GetChild(0).GetComponent<SpriteRenderer>();
+        spriteAnim = transform.GetChild(0).GetComponent<Animator>();
         anim = transform.parent.GetComponent<Animator>();
         RollCustomer();
     }
@@ -32,6 +34,7 @@ public class Order : MonoBehaviour {
     {
         yield return new WaitForSeconds(2);
         spriteRend.sprite = characters[activeCharacter].GetComponent<SpriteRenderer>().sprite;
+        spriteAnim.runtimeAnimatorController = character.GetComponent<Animator>().runtimeAnimatorController;
         anim.SetBool("Ordering", true);
         foodItems.Clear();
         numOfItems = Random.Range(1, 4);
@@ -45,6 +48,9 @@ public class Order : MonoBehaviour {
         {
             dialog.text += "\n" + foodItems[i];
         }
+        spriteAnim.SetBool("Talking", true);
+        yield return new WaitForSeconds(3);
+        spriteAnim.SetBool("Talking", false);
     }
 
     public void RollCustomer()

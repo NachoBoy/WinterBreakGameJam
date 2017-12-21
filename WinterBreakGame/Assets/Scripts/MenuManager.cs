@@ -70,7 +70,8 @@ public class MenuManager : MonoBehaviour {
     {
         deliveringOrder = true;
         Order currentOrder = GameObject.FindObjectOfType<Order>();
-        if(currentOrder.foodItems.All(playerFood.Contains) && (currentOrder.foodItems.Count == playerFood.Count)){
+        Animator customerAnim = currentOrder.transform.GetChild(0).GetComponent<Animator>();
+        if (currentOrder.foodItems.All(playerFood.Contains) && (currentOrder.foodItems.Count == playerFood.Count)){
             Order.dialog.text = currentOrder.characters[currentOrder.activeCharacter].GetComponent<Character>().exitHappyDialog;
             SM.AddPoints(currentOrder.foodItems.Count * 100);
         }
@@ -78,8 +79,10 @@ public class MenuManager : MonoBehaviour {
         {
             Order.dialog.text = currentOrder.characters[currentOrder.activeCharacter].GetComponent<Character>().exitSadDialog;
         }
+        customerAnim.SetBool("Talking", true);
         queuedItems.text = "Queued Items:";
         yield return new WaitForSeconds(3);
+        customerAnim.SetBool("Talking", false);
         currentOrder.anim.SetBool("Ordering", false);
         Order.dialog.text = "";
         orderManager.RollCustomer();

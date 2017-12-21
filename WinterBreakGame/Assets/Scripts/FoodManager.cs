@@ -17,7 +17,7 @@ public class FoodManager : MonoBehaviour {
         Salad,
         Fries,
         OnionRings,
-        MozerellaSticks,
+        MozzarellaSticks,
         MacAndCheese,
         Water,
         Soda,
