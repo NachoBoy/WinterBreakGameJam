@@ -5,7 +5,7 @@ using UnityEngine;
 public class Order : MonoBehaviour {
 
     [HideInInspector]
-    public FoodManager.Food[] foodItems;
+    public List<FoodManager.Food> foodItems;
 
     [HideInInspector]
     public int numOfItems;
@@ -14,14 +14,13 @@ public class Order : MonoBehaviour {
     void Start()
     {
         numOfItems = Random.Range(1, 4);
-        foodItems = new FoodManager.Food[numOfItems];
         for (int j = 0; j < numOfItems; j++)
         {
-            foodItems[j] = ((FoodManager.Food)Random.Range(0, System.Enum.GetValues(typeof(FoodManager.Food)).Length));
+            foodItems.Add(((FoodManager.Food)Random.Range(0, System.Enum.GetValues(typeof(FoodManager.Food)).Length)));
         }
 
         print("I would like " + foodItems[0]);
-        for(int i = 1; i < foodItems.Length; i++)
+        for(int i = 1; i < foodItems.Count; i++)
         {
             print(" and some " + foodItems[i]);
         }
