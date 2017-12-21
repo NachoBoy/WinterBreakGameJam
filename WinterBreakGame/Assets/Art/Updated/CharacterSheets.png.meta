@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8345ad748d05b13498b9083558429533
-timeCreated: 1513879183
+timeCreated: 1513881015
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -137,7 +137,7 @@ TextureImporter:
         x: 0
         y: 3528
         width: 660
-        height: 588
+        height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,10 +148,10 @@ TextureImporter:
       name: Customer_Vegan_Talk
       rect:
         serializedVersion: 2
-        x: 660
+        x: 661
         y: 3528
         width: 660
-        height: 588
+        height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,10 +162,10 @@ TextureImporter:
       name: Customer_Vegan_Blink
       rect:
         serializedVersion: 2
-        x: 1320
+        x: 1322
         y: 3528
-        width: 660
-        height: 588
+        width: 658
+        height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,7 +179,7 @@ TextureImporter:
         x: 0
         y: 2940
         width: 660
-        height: 588
+        height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,10 +190,10 @@ TextureImporter:
       name: Customer_LilKid_Talk
       rect:
         serializedVersion: 2
-        x: 660
+        x: 661
         y: 2940
         width: 660
-        height: 588
+        height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,10 +204,10 @@ TextureImporter:
       name: Customer_LilKid_Blink
       rect:
         serializedVersion: 2
-        x: 1320
+        x: 1322
         y: 2940
-        width: 660
-        height: 588
+        width: 658
+        height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,7 +221,7 @@ TextureImporter:
         x: 0
         y: 2352
         width: 660
-        height: 588
+        height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,7 +235,7 @@ TextureImporter:
         x: 660
         y: 2352
         width: 660
-        height: 588
+        height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,7 +249,7 @@ TextureImporter:
         x: 1320
         y: 2352
         width: 660
-        height: 588
+        height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -263,7 +263,7 @@ TextureImporter:
         x: 0
         y: 1764
         width: 660
-        height: 588
+        height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,7 +277,7 @@ TextureImporter:
         x: 660
         y: 1764
         width: 660
-        height: 588
+        height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,7 +291,7 @@ TextureImporter:
         x: 1320
         y: 1764
         width: 660
-        height: 588
+        height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,7 +305,7 @@ TextureImporter:
         x: 0
         y: 1176
         width: 660
-        height: 588
+        height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -319,7 +319,7 @@ TextureImporter:
         x: 661
         y: 1176
         width: 660
-        height: 587
+        height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -333,7 +333,7 @@ TextureImporter:
         x: 1320
         y: 1176
         width: 660
-        height: 588
+        height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,7 +347,7 @@ TextureImporter:
         x: 0
         y: 588
         width: 660
-        height: 588
+        height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,10 +358,10 @@ TextureImporter:
       name: Customer_Thi_Talk
       rect:
         serializedVersion: 2
-        x: 660
+        x: 661
         y: 588
         width: 660
-        height: 588
+        height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -372,10 +372,10 @@ TextureImporter:
       name: Customer_Thi_Blink
       rect:
         serializedVersion: 2
-        x: 1320
+        x: 1322
         y: 588
-        width: 660
-        height: 588
+        width: 657
+        height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -389,7 +389,7 @@ TextureImporter:
         x: 0
         y: 0
         width: 659
-        height: 588
+        height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -403,7 +403,7 @@ TextureImporter:
         x: 660
         y: 0
         width: 660
-        height: 588
+        height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -417,7 +417,7 @@ TextureImporter:
         x: 1320
         y: 0
         width: 660
-        height: 588
+        height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
