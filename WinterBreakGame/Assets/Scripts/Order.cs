@@ -5,23 +5,25 @@ using UnityEngine;
 public class Order : MonoBehaviour {
 
     [HideInInspector]
-    public List<FoodManager.Food> foodItems;
+    public FoodManager.Food[] foodItems;
 
     [HideInInspector]
-    public int numOfItems = Random.Range(0, 3);
+    public int numOfItems;
 
     // Use this for initialization
     void Start()
     {
-        for(int j = 0; j < numOfItems; j++)
+        numOfItems = Random.Range(1, 4);
+        foodItems = new FoodManager.Food[numOfItems];
+        for (int j = 0; j < numOfItems; j++)
         {
-            foodItems[j] = (FoodManager.Food)Random.Range(0, System.Enum.GetValues(typeof(FoodManager.Food)).Length);
+            foodItems[j] = ((FoodManager.Food)Random.Range(0, System.Enum.GetValues(typeof(FoodManager.Food)).Length));
         }
 
-        print("I would like a " + foodItems[0]);
-        for(int i = 1; i < numOfItems; i++)
+        print("I would like " + foodItems[0]);
+        for(int i = 1; i < foodItems.Length; i++)
         {
-            print("/n and some " + foodItems[i]);
+            print(" and some " + foodItems[i]);
         }
     }
 
