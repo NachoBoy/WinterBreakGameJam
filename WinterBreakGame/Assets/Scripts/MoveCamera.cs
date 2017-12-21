@@ -10,10 +10,8 @@ public class MoveCamera : MonoBehaviour {
     public bool register = false; //if the player is currently looking at the register screen or not
     public bool inMotion = false; //if the screen is currently moving - prevent mouse clicks from firing anything during the process
     
-    void Update()
+    public void Move()
     {
-        if (Input.GetMouseButtonDown(0) && inMotion == false) //on mouse click - change this to respond to a button in the dialog box/register screen later
-        {
             if(register == true)
             {
                 inMotion = true;
@@ -27,9 +25,7 @@ public class MoveCamera : MonoBehaviour {
                 StopCoroutine("MoveObjectLeft");
                 StartCoroutine("MoveObjectLeft", movementDistance);
                 register = true;
-            }
-        }
-        
+            }       
     }
 
     //moving camera left

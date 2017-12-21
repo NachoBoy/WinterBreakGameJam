@@ -29,7 +29,7 @@ public class MenuManager : MonoBehaviour {
         if (playerFood.Count < 4)
         {
             playerFood.Add(es.currentSelectedGameObject.GetComponent<FoodAssigned>().foodAssigned);
-            queuedItems.text += "\n" + es.currentSelectedGameObject.GetComponent<FoodAssigned>().foodAssigned;
+            queuedItems.text += es.currentSelectedGameObject.GetComponent<FoodAssigned>().foodAssigned + "\n";
             print(es.currentSelectedGameObject.GetComponent<FoodAssigned>().foodAssigned + " added");
         }
     }
@@ -50,11 +50,11 @@ public class MenuManager : MonoBehaviour {
             string removedItem = playerFood[playerFood.Count - 1].ToString();
             print(playerFood[playerFood.Count - 1] + " removed");
             print(removedItem + " Is a thing");
-            queuedItems.text = "Queued Items:";
+            queuedItems.text = "";
             playerFood.RemoveAt(playerFood.Count-1);
             for(int i = 0; i < playerFood.Count; i++)
             {
-                queuedItems.text += "\n" + playerFood[i].ToString();
+                queuedItems.text +=  playerFood[i].ToString() + "\n";
             }
             
         }
@@ -80,7 +80,7 @@ public class MenuManager : MonoBehaviour {
             Order.dialog.text = currentOrder.characters[currentOrder.activeCharacter].GetComponent<Character>().exitSadDialog;
         }
         customerAnim.SetBool("Talking", true);
-        queuedItems.text = "Queued Items:";
+        queuedItems.text = "";
         yield return new WaitForSeconds(3);
         customerAnim.SetBool("Talking", false);
         currentOrder.anim.SetBool("Ordering", false);
