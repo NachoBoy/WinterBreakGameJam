@@ -9,32 +9,32 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1543481427825182}
+  m_RootGameObject: {fileID: 1634917002609734}
   m_IsPrefabParent: 1
---- !u!1 &1543481427825182
+--- !u!1 &1634917002609734
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4926469794205146}
-  - component: {fileID: 114656897358797780}
-  - component: {fileID: 212423876845398420}
-  - component: {fileID: 95184551445018836}
+  - component: {fileID: 4847164515093812}
+  - component: {fileID: 114760328238783026}
+  - component: {fileID: 212431137165712022}
+  - component: {fileID: 95336938892480032}
   m_Layer: 0
-  m_Name: Customer_LilKid
+  m_Name: Customer_Businessman
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4926469794205146
+--- !u!4 &4847164515093812
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1543481427825182}
+  m_GameObject: {fileID: 1634917002609734}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -4.5, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -42,16 +42,16 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!95 &95184551445018836
+--- !u!95 &95336938892480032
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1543481427825182}
+  m_GameObject: {fileID: 1634917002609734}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3aed919aa8708ab4cbc475122dc3d547, type: 2}
+  m_Controller: {fileID: 9100000, guid: f67a4a9f803f33a4dae4b6d8c7cdb8c2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -59,26 +59,26 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114656897358797780
+--- !u!114 &114760328238783026
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1543481427825182}
+  m_GameObject: {fileID: 1634917002609734}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75923614d1991a740a26dda70fe1f4d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entryDialog: 'Hi lady! I want these things:'
-  exitHappyDialog: Yayyyyyy!
-  exitSadDialog: I didn't want this!!
---- !u!212 &212423876845398420
+  entryDialog: 'I''m on a tight schedule. I would like:'
+  exitHappyDialog: Just on time, thank you!
+  exitSadDialog: I'd tell you to fix my order but I'm going to be late.
+--- !u!212 &212431137165712022
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1543481427825182}
+  m_GameObject: {fileID: 1634917002609734}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -107,7 +107,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300006, guid: 8345ad748d05b13498b9083558429533, type: 3}
+  m_Sprite: {fileID: 21300018, guid: 8345ad748d05b13498b9083558429533, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

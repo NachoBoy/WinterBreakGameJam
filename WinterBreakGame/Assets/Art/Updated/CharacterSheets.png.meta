@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 8345ad748d05b13498b9083558429533
-timeCreated: 1513881015
+timeCreated: 1513881892
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -232,7 +232,7 @@ TextureImporter:
       name: Customer_Grandma_Talk
       rect:
         serializedVersion: 2
-        x: 660
+        x: 661
         y: 2352
         width: 660
         height: 586
@@ -246,9 +246,9 @@ TextureImporter:
       name: Customer_Grandma_Blink
       rect:
         serializedVersion: 2
-        x: 1320
+        x: 1322
         y: 2352
-        width: 660
+        width: 658
         height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -274,7 +274,7 @@ TextureImporter:
       name: Customer_Businessman_Talk
       rect:
         serializedVersion: 2
-        x: 660
+        x: 661
         y: 1764
         width: 660
         height: 586
@@ -288,9 +288,9 @@ TextureImporter:
       name: Customer_Businessman_Blink
       rect:
         serializedVersion: 2
-        x: 1320
+        x: 1322
         y: 1764
-        width: 660
+        width: 658
         height: 586
       alignment: 0
       pivot: {x: 0.5, y: 0.5}

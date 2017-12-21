@@ -70,9 +70,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75923614d1991a740a26dda70fe1f4d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entryDialog: 'I need to grab these foods for my waifu:'
-  exitHappyDialog: My waifu is going to be so happy!
-  exitSadDialog: How dare you disrespect my waifu?
+  entryDialog: 'Heyo! I''m in the mood for:'
+  exitHappyDialog: I'll slide you a GDK membership for doing a good job!
+  exitSadDialog: You're worse than Adam...
 --- !u!212 &212572445246907580
 SpriteRenderer:
   m_ObjectHideFlags: 1
