@@ -21,8 +21,9 @@ GameObject:
   - component: {fileID: 4535400930343922}
   - component: {fileID: 114782458217209992}
   - component: {fileID: 212735565863360578}
+  - component: {fileID: 95591698853252952}
   m_Layer: 0
-  m_Name: 0w0
+  m_Name: Customer_Lark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35,12 +36,29 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1732105945707828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.10099868, y: 0.93912387, z: 89.95508}
+  m_LocalPosition: {x: -4.5, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &95591698853252952
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1732105945707828}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 01a7d9318e143ed42b2767bef03c300a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114782458217209992
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -52,9 +70,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75923614d1991a740a26dda70fe1f4d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entryDialog: '0w0 I want dis fwood pwease:'
-  exitHappyDialog: ^w^ yay dis is my owder!
-  exitSadDialog: 0A0 dis isn't my owder!
+  entryDialog: '0w0 H-hewwo, I want dis fwood pwease:'
+  exitHappyDialog: ^w^ Yay, dis is my owder!
+  exitSadDialog: '0A0 D-dis isn''t my owder!
+
+'
 --- !u!212 &212735565863360578
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -88,8 +108,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300008, guid: 3a463e2502bf7004f832d4e9d0cc5760, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300024, guid: 8345ad748d05b13498b9083558429533, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
