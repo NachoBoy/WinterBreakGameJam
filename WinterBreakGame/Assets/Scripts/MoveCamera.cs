@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MoveCamera : MonoBehaviour {
 
@@ -9,7 +10,15 @@ public class MoveCamera : MonoBehaviour {
     public float movementDistance = 9.2f; //distance the camera moves
     public bool register = false; //if the player is currently looking at the register screen or not
     public bool inMotion = false; //if the screen is currently moving - prevent mouse clicks from firing anything during the process
-    
+
+    private Button menuButton;
+
+    private void Start()
+    {
+        menuButton = GameObject.Find("Menu").GetComponent<Button>();
+    }
+
+
     public void Move()
     {
             if(register == true)
@@ -21,6 +30,7 @@ public class MoveCamera : MonoBehaviour {
             }
             else if (register == false)
             {
+                menuButton.interactable = false;
                 inMotion = true;
                 StopCoroutine("MoveObjectLeft");
                 StartCoroutine("MoveObjectLeft", movementDistance);

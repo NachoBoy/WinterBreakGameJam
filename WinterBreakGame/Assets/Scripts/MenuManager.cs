@@ -15,6 +15,8 @@ public class MenuManager : MonoBehaviour {
     private Text queuedItems;
     public GameObject[] itemCanvases;
 
+    private Button orderButton;
+
     private bool deliveringOrder;
 	// Use this for initialization
 	void Start () {
@@ -22,6 +24,8 @@ public class MenuManager : MonoBehaviour {
         SM = GameObject.FindObjectOfType<ScoreManager>();
         orderManager = GameObject.FindObjectOfType<Order>();
         queuedItems = GameObject.Find("QueuedItems").GetComponent<Text>();
+        orderButton = GameObject.Find("OrderFood").GetComponent<Button>();
+        UpdateSubmitButton();
 	}
 
     public void MenuOption()
@@ -31,6 +35,7 @@ public class MenuManager : MonoBehaviour {
             playerFood.Add(es.currentSelectedGameObject.GetComponent<FoodAssigned>().foodAssigned);
             queuedItems.text += es.currentSelectedGameObject.GetComponent<FoodAssigned>().foodAssigned + "\n";
             print(es.currentSelectedGameObject.GetComponent<FoodAssigned>().foodAssigned + " added");
+            UpdateSubmitButton();
         }
     }
     
@@ -56,6 +61,7 @@ public class MenuManager : MonoBehaviour {
             {
                 queuedItems.text +=  playerFood[i].ToString() + "\n";
             }
+            UpdateSubmitButton();
             
         }
     }
@@ -81,12 +87,25 @@ public class MenuManager : MonoBehaviour {
         }
         customerAnim.SetBool("Talking", true);
         queuedItems.text = "";
+        playerFood.Clear();
+        UpdateSubmitButton();
         yield return new WaitForSeconds(3);
         customerAnim.SetBool("Talking", false);
         currentOrder.anim.SetBool("Ordering", false);
         Order.dialog.text = "";
         orderManager.RollCustomer();
-        playerFood.Clear();
         deliveringOrder = false;
+    }
+
+    public void UpdateSubmitButton()
+    {
+        if (playerFood.Count > 0 )
+        {
+            orderButton.interactable = true;
+        }
+        else
+        {
+            orderButton.interactable = false;
+        }
     }
 }

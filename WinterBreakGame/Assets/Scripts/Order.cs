@@ -21,12 +21,17 @@ public class Order : MonoBehaviour {
     private SpriteRenderer spriteRend;
     private Animator spriteAnim;
 
+    private Button menuButton;
+
     private void Start()
     {
+        
         dialog = GameObject.Find("DialogBox").GetComponent<Text>();
         spriteRend = transform.GetChild(0).GetComponent<SpriteRenderer>();
         spriteAnim = transform.GetChild(0).GetComponent<Animator>();
         anim = transform.parent.GetComponent<Animator>();
+        menuButton = GameObject.Find("Menu").GetComponent<Button>();
+        menuButton.interactable = false;
         RollCustomer();
     }
     // Use this for initialization
@@ -49,6 +54,7 @@ public class Order : MonoBehaviour {
             dialog.text += "\n" + foodItems[i];
         }
         spriteAnim.SetBool("Talking", true);
+        menuButton.interactable = true;
         yield return new WaitForSeconds(3);
         spriteAnim.SetBool("Talking", false);
     }
