@@ -17,6 +17,8 @@ public class MenuManager : MonoBehaviour {
 
     private Button orderButton;
 
+    private MoveCamera moveCamera;
+
     private bool deliveringOrder;
 	// Use this for initialization
 	void Start () {
@@ -25,12 +27,13 @@ public class MenuManager : MonoBehaviour {
         orderManager = GameObject.FindObjectOfType<Order>();
         queuedItems = GameObject.Find("QueuedItems").GetComponent<Text>();
         orderButton = GameObject.Find("OrderFood").GetComponent<Button>();
+        moveCamera = Camera.main.GetComponent<MoveCamera>();
         UpdateSubmitButton();
 	}
 
     public void MenuOption()
     {
-        if (playerFood.Count < 4)
+        if (playerFood.Count < 4 && moveCamera.inMotion == false)
         {
             playerFood.Add(es.currentSelectedGameObject.GetComponent<FoodAssigned>().foodAssigned);
             queuedItems.text += es.currentSelectedGameObject.GetComponent<FoodAssigned>().foodAssigned + "\n";
