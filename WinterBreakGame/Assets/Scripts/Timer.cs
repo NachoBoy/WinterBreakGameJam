@@ -7,7 +7,8 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour {
 
     public float timeLeft = 180f; //time for level 
-    Text text;
+    public string levelToLoad;
+    private Text text;
     private int timeLeftInt;
 
 	// Use this for initialization
@@ -23,7 +24,7 @@ public class Timer : MonoBehaviour {
         text.text = (timeLeftInt.ToString());
         if(timeLeft < 0)
         {
-            SceneManager.LoadScene("LarkTestScene");
+            SceneManager.LoadScene(levelToLoad);
         }
 	}
 }

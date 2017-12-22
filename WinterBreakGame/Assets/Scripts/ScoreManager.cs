@@ -6,12 +6,12 @@ using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour {
 
     private Text scoreText;
-    private int score = 0;
+    public static int score = 0;
 
 	// Use this for initialization
 	void Start () {
         scoreText = GameObject.Find("Score").GetComponent<Text>();
-
+        score = 0;
         UpdateScore();
 	}
 	
