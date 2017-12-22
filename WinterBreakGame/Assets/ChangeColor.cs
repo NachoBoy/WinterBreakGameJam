@@ -16,6 +16,6 @@ public class ChangeColor : MonoBehaviour {
     }
     void Update()
     {
-        spriteRenderer.color = Color.Lerp(A, B,Time.time * timer * Time.deltaTime);
+        spriteRenderer.color = Color.Lerp(A, B, Time.time * timer * Time.fixedDeltaTime);
     }
 }
